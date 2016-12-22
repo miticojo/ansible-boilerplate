@@ -1,0 +1,10 @@
+- hosts: localhost
+  become: yes
+  vars:
+    color: red
+    stage: production
+    path: "{{ color }}/{{ stage }}"
+
+  tasks:
+  - debug: msg="Hello World"
+
